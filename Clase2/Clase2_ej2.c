@@ -1,7 +1,7 @@
 /*
   Escribe un programa en C que
   1) Pida al usuario ingresar un número entero decimal
-  2) Pida al usuario una mascara
+  2) Pida al usuario una mascara (número entero decimal)
   3) Muestre las represantaciones binarias de ambos
   4) Aplique al numero original las operaciones (AND, OR, NOT y módulo) 
   y muestre el resultado en binario
