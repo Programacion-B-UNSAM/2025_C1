@@ -7,6 +7,8 @@
 - [Clase 1](https://github.com/Programacion-B-UNSAM/2025_C1/tree/main/Clase1): Sistemas de numeración, y Op. lógicas
 
 - [Clase 2](https://github.com/Programacion-B-UNSAM/2025_C1/tree/main/Clase2): Tipos de dato, estructuras y uniones
+  
+- [Clase 3](https://github.com/Programacion-B-UNSAM/2025_C1/tree/main/Clase3): Variables, funciones, macros y header
 
 ## Coding style rules
 
