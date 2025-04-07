@@ -10,6 +10,8 @@
   
 - [Clase 3](https://github.com/Programacion-B-UNSAM/2025_C1/tree/main/Clase3): Variables, funciones, macros y header
 
+- [Clase 4](https://github.com/Programacion-B-UNSAM/2025_C1/tree/main/Clase4): Memoria y Punteros
+
 ## Coding style rules
 
 El la pestaña wiki pueden encotrar los estilos correctos
