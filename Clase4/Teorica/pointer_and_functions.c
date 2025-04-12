@@ -9,7 +9,7 @@ void argumento_por_referencia(int* a, int* b, int* c){
 
 void print_memory(int a){
   printf("&a = \t%p\n", &a);
-  a = 50; /* modifica lo que esta en la direccion de memoria &a */
+  a = 50; /* modifica lo que esta en la direccion de memoria &a, que no es lo mismo que la direccion de memoria &var */
 }
 
 int main(void){
@@ -18,8 +18,8 @@ int main(void){
   int* ptr = &var;
 
 
-  // printf("&var = \t%p \n", ptr);
-  // print_memory(var);
+  printf("&var = \t%p \n", ptr);
+  print_memory(var);
 
   printf("\nvar = %d",var);
   printf("\nvar1 = %d",var1);
