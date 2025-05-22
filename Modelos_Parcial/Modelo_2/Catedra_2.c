@@ -61,7 +61,7 @@ dNode* CATEDRA_insDFirst(dNode* primer_dNode, int new_data){
     return new_dNode;
 }
 
-dNode *CATEDRA_CrearListaDoble(){
+void CATEDRA_CrearListaDoble(dNode** first, dNode **last){
     int aux_lista[] = {53, 17, 70, 69, 59, 94, 69, 93, 89, 62, 48, 68, 29, 40, 36};
     int lista_size = sizeof(aux_lista)/sizeof(aux_lista[0]);
     /* creo lista doble */
@@ -91,6 +91,6 @@ dNode *CATEDRA_CrearListaDoble(){
     actual = nuevo_dNode;
     while(actual->next != NULL)
         actual = actual->next; 
-    
-    return actual; /* devuelve el ultimo nodo de la lista */
+    *first = nuevo_dNode;
+    *last = actual; /* devuelve el ultimo nodo de la lista */
 }
