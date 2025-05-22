@@ -14,12 +14,12 @@
 #include "funciones.c"
 #include "Catedra_2.c"
 
-int main() {
+int main()
+{
 #ifdef EJ1
     printf("\n\n========== Ejercicio 1 ==========\n\n");
-    
+
     /* Comienzo de su codigo */
-    
 
     /* Fin de su codigo */
 #endif
@@ -35,8 +35,8 @@ int main() {
 
 #ifdef EJ3
     printf("\n\n========== Ejercicio 3 ==========\n\n");
-    dNode *ultimoNodo = NULL , *primerNodo = NULL;
-    CATEDRA_CrearListaDoble(&primerNodo, &ultimoNodo);
+    dNode *ultimoDNodo = NULL, *primerDNodo = NULL;
+    CATEDRA_CrearListaDoble(&primerDNodo, &ultimoDNodo);
 
     /* Comienzo de su codigo */
 
