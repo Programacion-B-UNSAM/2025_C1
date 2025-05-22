@@ -36,7 +36,7 @@ int main() {
 #ifdef EJ3
     printf("\n\n========== Ejercicio 3 ==========\n\n");
     dNode *ultimoNodo = NULL , *primerNodo = NULL;
-    CATEDRA_CrearListaDoble(primerNodo, ultimoNodo);
+    CATEDRA_CrearListaDoble(&primerNodo, &ultimoNodo);
 
     /* Comienzo de su codigo */
 

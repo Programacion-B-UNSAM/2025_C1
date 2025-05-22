@@ -22,4 +22,7 @@ typedef struct dNode {
 #define EJ2
 #define EJ3
 
+Node* CATEDRA_CrearListaEnlazada(void);
+void CATEDRA_CrearListaDoble(dNode** first, dNode **last);
+
 #endif

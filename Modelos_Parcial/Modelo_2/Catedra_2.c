@@ -3,7 +3,7 @@
 #include <time.h>
 #include "definiciones.h"
 
-Node* CATEDRA_createNode(int data) {
+static Node* CATEDRA_createNode(int data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     if (!newNode) {
         fprintf(stderr, "Memory allocation failed!\n");
@@ -15,7 +15,7 @@ Node* CATEDRA_createNode(int data) {
 }
 
 
-Node* CATEDRA_insFirst(Node* PrimerNode, int new_data) {
+static Node* CATEDRA_insFirst(Node* PrimerNode, int new_data) {
     Node* newNode = CATEDRA_createNode(new_data);
     if (PrimerNode == NULL) {
         return newNode;
@@ -35,7 +35,7 @@ Node* CATEDRA_CrearListaEnlazada(void){ /* funciona */
     return nuevo_Node;
 }
 
-dNode * CATEDRA_create_dNode(int data){
+static dNode * CATEDRA_create_dNode(int data){
     dNode* new_dNode = (dNode*)malloc(sizeof(dNode));
 
     if (!new_dNode) {
@@ -49,7 +49,7 @@ dNode * CATEDRA_create_dNode(int data){
 }
 
 
-dNode* CATEDRA_insDFirst(dNode* primer_dNode, int new_data){
+static dNode* CATEDRA_insDFirst(dNode* primer_dNode, int new_data){
     dNode* new_dNode = CATEDRA_create_dNode(new_data);
     if (primer_dNode == NULL) {
         return new_dNode;
