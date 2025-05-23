@@ -19,6 +19,8 @@ la siguiente posición del array temporal.
 
 #include "listas.h"
 
+#define MAX_NUMBER 1000 /* Este valor debe ser actualizado de acuerdo al valor maximo de la lista que se quiera ordenar */
+
 void mostrarLista(int *lista, int longitud);
 void EasySort(int *lista, int longitud);
 int main() {
@@ -44,9 +46,11 @@ void mostrarLista(int *lista, int longitud) {
 }
 
 void EasySort(int *lista, int longitud) {
-    unsigned int i, j, temp[longitud], lastMin = 0, min;
+    /* Atención! Este algoritmo no tiene en cuenta la posibilidad de que haya numeros repetidos */
+    unsigned int i, j, temp[longitud], lastMin = 0, min = MAX_NUMBER;
 
     for (j = 0; j < longitud; j++) {
+        min = MAX_NUMBER;
         for (i = 0; i < longitud; i++) {
             if ((lista[i] < min) && (lista[i] > lastMin))
                 min = lista[i];
