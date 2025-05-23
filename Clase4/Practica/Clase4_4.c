@@ -47,7 +47,7 @@ void BubbleSort(int* lista, int longitud) {
     for (int j = 0; j < longitud - 1; j++) {
         for (int i = 0; i < longitud - j - 1; i++) {
             if (lista[i] > lista[i + 1]) {
-                Intercambio(lista[i], lista[i + 1]);
+                Intercambio(&lista[i], &lista[i + 1]);
             }
         }
     }
